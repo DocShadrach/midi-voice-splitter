@@ -137,17 +137,6 @@ strips used as an adapter), connecting **by name**:
   channel by hardware, which would duplicate every voice.
 - Do the wiring **with the USB unplugged**, and double-check `5V`↔`5V` and `GND`↔`GND`.
 
-### Photos from this build
-
-| | |
-|---|---|
-| ![Arduino Mega with female headers](docs/01-arduino-female-headers.jpg) | ![Shield sitting on top of the board](docs/02-shield-mounted-on-board.jpg) |
-| The board's headers are **female sockets**. A shield with female sockets cannot mate with these. | The shield sitting on top: it *looks* mounted, and it makes **no contact at all**. |
-| ![Side view of the stack](docs/03-side-view-stack.jpg) | ![MIDI DIN connectors](docs/04-midi-connectors.jpg) |
-| Side view of the stack (before the jumper wires). | MIDI IN / OUT connectors — remember: use **OUT**, not THRU. |
-
----
-
 ## The ON/OFF switch
 
 The shield's switch decides whether the MIDI input circuit is connected to the Arduino's RX pin:
@@ -289,6 +278,6 @@ SoftwareSerial, Serial1, chord window, duplicate/steal/CC64 variants, 8 and 16 v
 
 ## License
 
-Code: **MIT** (see `LICENSE`). Documentation and photos: **CC BY-SA 4.0**.
+Code: **MIT** (see `LICENSE`). Documentation: **CC BY-SA 4.0**.
 
 If you build one, a photo or a note about what gear you're driving with it is always welcome.
