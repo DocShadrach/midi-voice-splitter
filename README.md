@@ -1,7 +1,10 @@
 # MIDI Voice Splitter — Arduino Mega 2560
 
-Turns **one MIDI channel into four**. Play a chord and every note goes out on its own MIDI channel, so
-gear that is monophonic per track/part plays polyphonically.
+Turns **one MIDI channel into four**. Play a chord and every note goes out on its own MIDI channel.
+
+**Made for the Elektron Digitakt II (mk2):** its audio tracks are monophonic, so splitting the keyboard
+across four channels turns a single-channel keyboard into a 4-note polyphonic instrument spread over four
+tracks.
 
 | ![Arduino Mega 2560](docs/arduino-mega-2560.jpg) | ![MIDI shield](docs/midi-shield.jpg) |
 |---|---|
@@ -28,9 +31,7 @@ Connect **by name**:
 
 Keyboard → shield **IN**. Shield **OUT** → your gear (**not** THRU).
 
-> ⚠️ If your board has **female headers** (like the one above), the shield **cannot plug in directly**: it
-> sits on top, looks mounted, and makes no contact at all. That is the #1 reason this "doesn't work" —
-> hence the dupont wires.
+On the Digitakt II: set four audio tracks to receive on **13, 14, 15 and 16**.
 
 ## Install
 
